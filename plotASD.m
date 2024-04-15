@@ -10,7 +10,7 @@ freq = 0:fs/N:fs/2;
 [psd,freq] = plotPSD(data,fs);
 asd = sqrt(psd);
 
-plot(freq,asd)
+loglog(freq,asd)
 grid on
 title('Periodogram Using FFT')
 xlabel('Frequency (Hz)')

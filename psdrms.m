@@ -1,7 +1,7 @@
 function [spectrum, freq] = psdrms(signals, Fs, freq_low, freq_high, window, noverlap, nfft, method)
 
 if nargin < 8
-    method = 'rms';
+    method = 'power';
 end
 
 % Remove DC component

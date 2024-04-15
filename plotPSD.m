@@ -8,6 +8,7 @@ psd(2:end-1) = 2*psd(2:end-1);
 freq = 0:fs/N:fs/2;
 
 %plot(freq,psd)
+%semilogy(freq,psd)
 loglog(freq,psd);
 grid on
 %title('Periodogram Using FFT')
