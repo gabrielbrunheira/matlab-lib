@@ -11,6 +11,6 @@ freq = 0:fs/N:fs/2;
 %semilogy(freq,psd)
 loglog(freq,psd);
 grid on
-%title('Periodogram Using FFT')
+title('Periodogram Using FFT')
 xlabel('Frequency (Hz)')
 ylabel('Power/Frequency [units/(Hz)]')
