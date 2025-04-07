@@ -9,7 +9,7 @@ end
 
 flow = fs/length(data);
 
-[intrms_data, f_sel] = intrms(data, fs, flow);
+[intrms_data, f_sel] = intrms(data(:), fs, flow);
 
 if plot_type == "loglog"
     loglog(f_sel, intrms_data);
